@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class union_prueba {
-    Scanner scanner = new Scanner(System.in);
+    Scanner union = new Scanner(System.in);
     public void opciones() {
         String opcionPV, opcionU, opcionEn;
         System.out.println("PUNTOS DE VENTA");
@@ -9,7 +9,7 @@ public class union_prueba {
         System.out.println("⛟Bodegas y distribuidores");
         System.out.println("1. Conoce más");
         System.out.println("2. Entrega");
-        opcionPV = scanner.nextLine();
+        opcionPV = union.nextLine();
         switch (opcionPV) {
             case "1":
                 System.out.println("Ingrese su ubicación");
@@ -24,7 +24,7 @@ public class union_prueba {
                 System.out.println("Jaèn");
                 System.out.println("Tarapoto");
                 System.out.println("Iquitos");
-                opcionU = scanner.nextLine();
+                opcionU = union.nextLine();
                 switch (opcionU) {
                     case "Lima":
                         System.out.println("Salida | Universidad de la Unión Peruana");
@@ -65,7 +65,7 @@ public class union_prueba {
                 break;
             case "2":
                 System.out.println("Ingrese su dirección de entrega");
-                opcionEn = scanner.nextLine();
+                opcionEn = union.nextLine();
                 System.out.println("Su pedido será entregado a " + opcionEn);
                 break;
             default:
